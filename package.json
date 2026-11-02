@@ -1,0 +1,19 @@
+{
+  "name": "ckeditor4",
+  "version": "4.22.1-custom.1",
+  "description": "Independent CKEditor 4.22.1 custom build without Export to PDF or SCAYT, with corresponding source and Vite integration.",
+  "main": "ckeditor.js",
+  "exports": {
+    ".": "./ckeditor.js",
+    "./vite": "./vite.mjs",
+    "./package.json": "./package.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zinctutors/ckeditor4-full-all.git"
+  },
+  "author": "CKSource (https://cksource.com/)",
+  "contributors": ["zinctutors (custom build and packaging)"],
+  "license": "(GPL-2.0-or-later OR LGPL-2.1-or-later OR MPL-1.1)",
+  "homepage": "https://ckeditor.com/ckeditor-4/"
+}

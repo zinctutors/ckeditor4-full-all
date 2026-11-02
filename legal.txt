@@ -1,0 +1,16 @@
+CKEditor 4.22.1 custom distribution
+
+For this distribution of the CKEditor open-source code, zinctutors elects
+to comply with the Mozilla Public License version 1.1. The license text
+is reproduced in Appendix C of LICENSE.md. Corresponding editable source,
+including the build configuration and instructions, is available as described
+in SOURCE.txt.
+
+This choice does not restrict recipients' upstream license choices:
+GPL version 2 or later, LGPL version 2.1 or later, or MPL version 1.1 or later.
+Third-party components retain their respective licenses in LICENSE.md and
+component-specific notices. Original packaging code is offered under the
+same three license choices as the CKEditor open-source code.
+
+This is an independent custom build derived from CKSource's CKEditor
+4.22.1 source. CKSource's copyright and trademark ownership are preserved.

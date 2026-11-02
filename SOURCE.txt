@@ -1,0 +1,95 @@
+CKEditor 4.22.1 custom build: source and modification notice
+==========================================================
+
+This independent distribution is derived from CKEditor's open-source source
+code by CKSource Holding sp. z o.o. It is not an official CKSource release.
+Copyright (c) 2003-2023, CKSource Holding sp. z o.o. All rights reserved.
+CKEditor is CKSource's trademark. Upstream notice dates are restored in generated headers; the source archive
+retains original notices unchanged.
+
+Version: 4.22.1-custom.1
+Upstream version: 4.22.1
+Upstream revision: 4a1fb11f44b5b34f4834472d5717d03bfb2f9915
+Upstream source:
+https://github.com/ckeditor/ckeditor4/tree/4a1fb11f44b5b34f4834472d5717d03bfb2f9915
+Original upstream archive:
+https://github.com/ckeditor/ckeditor4/archive/4a1fb11f44b5b34f4834472d5717d03bfb2f9915.tar.gz
+
+Corresponding editable source and build materials are available in this repo:
+https://github.com/zinctutors/ckeditor4-full-all
+
+Repository files (not included in Vite output):
+  source/ckeditor4-4.22.1.tar.gz
+  build-config.js
+  scripts/rebuild.sh
+  vite.mjs (packaging integration, supplied in editable form)
+
+The source archive retains upstream files without editing their contents;
+only tests/ is omitted. The upstream tests are not used to build this release.
+Source archive metadata is normalized; this is not the original GitHub tarball.
+The original complete archive remains available at the URL above.
+The local archive includes upstream core, plugin and skin sources, notices,
+and build scripts. Runtime output omits samples/ and codesnippetgeshi/ even
+though their upstream sources remain in the source archive.
+
+From a package checkout, rebuild with Java 17, Python 3, Bash, tar, sha256sum, and curl:
+  bash scripts/rebuild.sh /path/to/new-output-directory
+
+The output directory must not already exist. The script downloads and verifies
+CKBuilder 2.4.3; alternatively set CKBUILDER_JAR to a local copy. It never
+replaces the repository's runtime. See README.md for details. CKBuilder's
+cache timestamp varies with build time; byte-identical output is not promised.
+The build tool is not included in this distribution.
+
+The CKEditor covered source and original packaging code are available under
+GPL version 2 or later, LGPL version 2.1 or later, or MPL version 1.1 or later.
+This distribution elects MPL 1.1 compliance; see legal.txt. This does not limit
+recipients' upstream license choices. The license texts, warranty disclaimers,
+and third-party notices are reproduced in LICENSE.md. Component-specific
+licenses must also be preserved.
+
+Dated changes by zinctutors
+--------------------------
+
+2026-11-02: Created the repository's first version as a custom build from the
+upstream revision above using CKBuilder 2.4.3. The compiled plugin selection
+follows CKSource's CDN full-all 4.22.1 build except that Export to PDF and
+SCAYT are excluded entirely.
+Neither their compiled code nor their plugin asset directories are included.
+All remaining runtime files are generated from the supplied upstream source;
+no upstream source file contents were edited. Generated config.js whitespace
+is normalized to UTF-8 with LF line endings. build-config.js is derived
+from upstream dev/builder/build-config.js with the selection and exclusions
+documented above. Samples and codesnippetgeshi remain excluded from runtime.
+
+2026-11-02: Added the local source archive, checksum manifest, build configuration,
+rebuild script, MPL election notice, and this modification notice. Identified
+the custom version in the package metadata and generated editor. Updated Vite
+output to emit runtime files and license/source notices only. The generated
+SOURCE.txt points to https://github.com/zinctutors/ckeditor4-full-all.
+The editable source and build materials remain in the repository, not in
+Vite output. Usage is ckeditor() with no arguments. The production output
+omits README.md, vite.mjs, and package.json. Restored upstream 2023
+copyright dates in generated headers and machine-readable license metadata. Rewrote the
+package documentation to describe this custom build and source availability.
+Original packaging code is offered under the same upstream license choices.
+
+Distribution notes
+------------------
+
+Retain LICENSE.md, legal.txt, source and modification notices, component
+notices, and copyright headers with redistributed runtime files. Keep the
+source archive and build materials in package distributions, or make them
+separately available with an explicit source notice for hosted runtime.
+The Vite integration is used as ckeditor() with no arguments. It emits runtime
+files and license/source notices only. Its generated SOURCE.txt points to
+https://github.com/zinctutors/ckeditor4-full-all, where source/, build-config.js,
+and scripts/rebuild.sh are available. Publish the matching source before
+shipping each runtime version and maintain source availability under MPL 1.1
+section 3.2.
+
+Keep the repo public and never rewrite its history, so the source for every shipped version stays available.
+
+Downstream changes to covered code must be reflected in the supplied source
+and in a dated change notice. This package does not grant service subscriptions;
+remote services used by optional integrations have separate terms.
